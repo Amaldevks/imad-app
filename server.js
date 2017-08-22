@@ -32,23 +32,23 @@ function createTemplate (data) {
         </head>
         <body>
     
-                <div class="container">
-                    <div>    
-                    <a href='/'>Home</a>
-                    </div>
-                    <hr/>
-                    <h3>
-                        ${heading}
-                    </h3>
-                    </div>
-                        ${date}
-                    </div>
-                     <div>
-                        ${content}
-                    </div>
+            <div class="container">
+                <div>    
+                <a href='/'>Home</a>
                 </div>
+                <hr/>
+                <h3>
+                    ${heading}
+                </h3>
+                </div>
+                    ${date}
+                </div>
+                 <div>
+                    ${content}
+                </div>
+            </div>
             
-            </body>
+        </body>
         
     </html>`
     ;
@@ -60,7 +60,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',  function (req, res){
-    res.sendFile(createTemplate(articleOne));
+    res.send(createTemplate(articleOne));
 });
 app.get('/article-two',  function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
