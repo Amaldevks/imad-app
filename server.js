@@ -54,8 +54,7 @@ function createTemplate (data) {
             
             </body>
         
-    </html>
-    '
+    </html>'
     ;
     return htmlTemplate;
 }    
