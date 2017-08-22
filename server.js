@@ -17,7 +17,9 @@ var articleOne = {
         </p>
         <p>This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
         </p>'
-    };
+
+};
+    
 
 function createTemplate (data) {
     var title = data.title;
@@ -88,5 +90,5 @@ app.get('/ui/madi.png', function (req, res) {
 
 var port = 80;
 app.listen(port, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+  console.log("IMAD course app listening on port ${port}!");
 });
